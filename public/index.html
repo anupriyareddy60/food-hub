@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodHub - Online Food Ordering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">🍔 FoodHub</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#foods">Food Menu</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="cart-button" onclick="openCartModal()">
+    🛒 Cart <span id="cartCount">0</span>
+</button>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO FOODHUB</p>
+
+            <h1>
+                Delicious food,
+                <span>delivered to your door.</span>
+            </h1>
+
+            <p>
+                Discover restaurants, explore delicious food,
+                and order your favourite meals easily.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search food..."
+                >
+
+                <button onclick="searchFood()">
+                    Search
+                </button>
+            </div>
+
+        </div>
+
+        <div class="hero-food">
+            🍕
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+        <h2>What are you craving?</h2>
+
+        <div class="category-container">
+
+            <button onclick="filterCategory('Pizza')">
+                🍕 Pizza
+            </button>
+
+            <button onclick="filterCategory('Burger')">
+                🍔 Burgers
+            </button>
+
+            <button onclick="filterCategory('Biryani')">
+                🍛 Biryani
+            </button>
+
+            <button onclick="filterCategory('Noodles')">
+                🍜 Noodles
+            </button>
+
+            <button onclick="filterCategory('Dessert')">
+                🍰 Desserts
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESTAURANTS -->
+    <section id="restaurants" class="section">
+
+        <div class="section-heading">
+            <div>
+                <p class="small-title">DISCOVER</p>
+                <h2>Popular Restaurants</h2>
+            </div>
+        </div>
+
+        <div id="restaurantContainer" class="restaurant-container">
+
+            <!-- MongoDB restaurants will appear here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOD MENU -->
+    <section id="foods" class="section">
+
+        <div class="section-heading">
+            <div>
+                <p class="small-title">OUR MENU</p>
+                <h2>Popular Food</h2>
+            </div>
+        </div>
+
+        <div id="foodContainer" class="food-container">
+
+            <!-- MongoDB food will appear here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY FOODHUB -->
+    <section id="about" class="about">
+
+        <p class="small-title">WHY FOODHUB?</p>
+
+        <h2>Everything you need for a great meal</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <div>🚀</div>
+                <h3>Fast Delivery</h3>
+                <p>
+                    Get your favourite meals delivered quickly.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div>🍽️</div>
+                <h3>Best Restaurants</h3>
+                <p>
+                    Discover popular restaurants and cuisines.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div>⭐</div>
+                <h3>Trusted Reviews</h3>
+                <p>
+                    Check ratings and reviews before ordering.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">🍔 FoodHub</div>
+
+        <p>
+            Your favourite food, just a click away.
+        </p>
+
+        <p class="copyright">
+            © 2026 FoodHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
